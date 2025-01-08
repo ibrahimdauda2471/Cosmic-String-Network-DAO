@@ -11,3 +11,5 @@ V
 &tests/cosmic-string-simulation.test.ts,0/2/02ab826fe59b3c0002c828d1c985cda6c1b345af
 P
  tests/energy-calculation.test.ts,7/d/7db1f42a6d9e73942c1f80e7608d277d048eec81
+N
+tests/network-topology.test.ts,0/b/0bd535dcb293ee9b22c1c8a4e762b868f73f65e4
