@@ -9,7 +9,6 @@
     name: (string-ascii 100),
     description: (string-utf8 1000),
     parameters: (list 10 int),
-    topology-id: uint,
     status: (string-ascii 20),
     result-hash: (optional (buff 32)),
     timestamp: uint
@@ -20,12 +19,11 @@
 (define-constant ERR_NOT_AUTHORIZED (err u403))
 (define-constant ERR_INVALID_SIMULATION (err u404))
 
-(define-public (create-simulation (name (string-ascii 100)) (description (string-utf8 1000)) (parameters (list 10 int)) (topology-id uint))
+(define-public (create-simulation (name (string-ascii 100)) (description (string-utf8 1000)) (parameters (list 10 int)))
   (let
     (
       (simulation-id (+ (var-get simulation-count) u1))
     )
-    (asserts! (is-some (contract-call? .network-topology get-topology topology-id)) ERR_INVALID_SIMULATION)
     (map-set cosmic-string-simulations
       simulation-id
       {
@@ -33,7 +31,6 @@
         name: name,
         description: description,
         parameters: parameters,
-        topology-id: topology-id,
         status: "pending",
         result-hash: none,
         timestamp: block-height
