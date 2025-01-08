@@ -9,3 +9,5 @@ Q
 !contracts/energy-calculation.clar,e/9/e9d32e1d7fbdc6d3594aeacfba19660ee576cbe9
 V
 &tests/cosmic-string-simulation.test.ts,0/2/02ab826fe59b3c0002c828d1c985cda6c1b345af
+P
+ tests/energy-calculation.test.ts,7/d/7db1f42a6d9e73942c1f80e7608d277d048eec81
