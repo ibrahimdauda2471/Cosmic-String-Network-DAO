@@ -7,3 +7,5 @@ O
 contracts/network-topology.clar,2/c/2c8d50bb6418484caa17c9866fa19dc9c43bb170
 Q
 !contracts/energy-calculation.clar,e/9/e9d32e1d7fbdc6d3594aeacfba19660ee576cbe9
+V
+&tests/cosmic-string-simulation.test.ts,0/2/02ab826fe59b3c0002c828d1c985cda6c1b345af
